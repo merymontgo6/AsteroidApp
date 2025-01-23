@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Asteroids</string>
+    <string name="jugarText">PLAY</string>
+    <string name="configText">SETTINGS</string>
+    <string name="acercaDeText">ABOUT</string>
+    <string name="salirText">EXIT</string>
+    <string name="prefText">Preferences</string>
+    <string name="aboutText">This program has been developed as part of the MP08 module - Multimedia Programming and Mobile Devices, in the second year of DAM</string>
+
+</resources>

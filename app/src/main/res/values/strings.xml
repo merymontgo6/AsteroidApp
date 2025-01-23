@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Asteroides</string>
+    <string name="jugarText">JUGAR</string>
+    <string name="configText">CONFIGURAR</string>
+    <string name="acercaDeText">ACERCA DE</string>
+    <string name="salirText">SALIR</string>
+    <string name="prefText">Preferències</string>
+    <string name="aboutText">Aquest programa ha estat desenvolupat
+        dins del mòdul MP08 - Programació Multimèdia i Dispositius Mòbils, de Segon de DAM</string>
+</resources>

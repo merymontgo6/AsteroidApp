@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="30sp"
+            android:text="@string/app_name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/jugarBoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/menuBoto"
+            android:text="@string/jugarText" />
+
+        <Button
+            android:id="@+id/configBoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/menuBoto"
+            android:text="@string/configText" />
+
+        <Button
+            android:id="@+id/acercaDeBoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/menuBoto"
+            android:text="@string/acercaDeText"
+            android:onClick="llancarAboutThat"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/salirBoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/menuBoto"
+            android:text="@string/salirText"
+            android:onClick="sortir"/>
+    </LinearLayout>
+
+</LinearLayout>
