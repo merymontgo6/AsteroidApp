@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class TranDrawable extends AppCompatActivity {
-    private boolean isInitialImage = true;
+    private boolean inici = true;
     private TransitionDrawable transitionDrawable;
 
     @Override
@@ -25,13 +25,13 @@ public class TranDrawable extends AppCompatActivity {
         transitionDrawable = (TransitionDrawable) getResources().getDrawable(R.drawable.transicio);
         imageView.setBackground(transitionDrawable);
 
-        Button changeBackgroundButton = findViewById(R.id.changeBackgroundButton);
-        changeBackgroundButton.setOnClickListener(new View.OnClickListener() {
+        Button canvi = findViewById(R.id.changeBackgroundButton);
+        canvi.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (isInitialImage) { transitionDrawable.startTransition(2000); // canvia a imatgeFinal
-                } else { transitionDrawable.reverseTransition(2000); // torna a imaatgeeInicial
+                if (inici) { transitionDrawable.startTransition(2000);
+                } else { transitionDrawable.reverseTransition(2000);
                 }
-                isInitialImage = !isInitialImage;
+                inici = !inici;
             }
         });
     }

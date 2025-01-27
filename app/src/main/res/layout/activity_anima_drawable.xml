@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aniDra2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/aniDra2"
-    android:orientation="vertical"
     android:background="@drawable/etom"
-    android:gravity="center">
+    android:orientation="vertical"
+    android:gravity="bottom|start"
+    tools:context=".AnimaUtils">
+
+    <Button
+        android:id="@+id/moureBoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/qP" />
 
     <ImageView
         android:id="@+id/nave"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:src="@drawable/nave"
-        android:background="#000000" />
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="90dp"
+        android:layout_gravity="center|start"
+        android:src="@drawable/nave" />
+
 </LinearLayout>

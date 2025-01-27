@@ -2,6 +2,9 @@ package com.example.munoz_karolayn_asteroids_i;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -12,6 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class AnimaDrawable extends AppCompatActivity {
     private ImageView naveImageView;
+    private AnimationDrawable animation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +29,12 @@ public class AnimaDrawable extends AppCompatActivity {
         });
 
         naveImageView = findViewById(R.id.nave);
+        Button moverButton = findViewById(R.id.moureBoto);
 
-        // Cargar y empezar la animación de frames
-        naveImageView.setBackgroundResource(R.drawable.animacio);
-        AnimationDrawable naveAnimation = (AnimationDrawable) naveImageView.getBackground();
-
-        // Iniciar la animación al hacer clic en la imagen de la nave
-        naveImageView.setOnClickListener(v -> naveAnimation.start());
+        moverButton.setOnClickListener(v -> {
+            naveImageView.setBackgroundResource(R.drawable.animacio);
+            animation = (AnimationDrawable) naveImageView.getBackground();
+            animation.start();
+        });
     }
 }

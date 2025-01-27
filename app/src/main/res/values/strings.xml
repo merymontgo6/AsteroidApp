@@ -12,4 +12,5 @@
     <string name="aDra" translatable="false">AnimationDrawable </string>
     <string name="tDra2" translatable="false">Arribarà? </string>
     <string name="mN" translatable="false">Mover Nave </string>
+    <string name="qP" translatable="false">Què pasará? </string>
 </resources>
