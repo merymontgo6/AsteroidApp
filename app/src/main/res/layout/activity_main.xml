@@ -32,14 +32,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/menuBoto"
-            android:text="@string/jugarText" />
+            android:text="@string/tDra" />
 
         <Button
             android:id="@+id/configBoto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/menuBoto"
-            android:text="@string/configText" />
+            android:text="@string/aUtils" />
+
+        <Button
+            android:id="@+id/mesBoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/menuBoto"
+            android:text="@string/aDra" />
 
         <Button
             android:id="@+id/acercaDeBoto"

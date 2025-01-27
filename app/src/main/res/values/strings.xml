@@ -6,5 +6,9 @@
     <string name="salirText">SALIR</string>
     <string name="prefText">Preferències</string>
     <string name="aboutText">Aquest programa ha estat desenvolupat
-        dins del mòdul MP08 - Programació Multimèdia i Dispositius Mòbils, de Segon de DAM</string>
+        dins del mòdul MP08 - Programació Multimèdia i Dispositius Mòbils, de Segon de DAM</string>\
+    <string name="tDra" translatable="false">TransitionDrawable</string>
+    <string name="aUtils" translatable="false">AnimationUtils </string>
+    <string name="aDra" translatable="false">AnimationDrawable </string>
+    <string name="tDra2" translatable="false">Arribarà? </string>
 </resources>
