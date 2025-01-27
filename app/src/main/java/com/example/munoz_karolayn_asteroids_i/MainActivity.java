@@ -34,6 +34,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button aniU = findViewById(R.id.aniU);
+        aniU.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AnimaUtils.class);
+                startActivity(intent);
+           }
+        });
+
+        Button animaDra3 = findViewById(R.id.animaDra3);
+        animaDra3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AnimaDrawable.class);
+               startActivity(intent);
+            }
+        });
     }
 
     @Override

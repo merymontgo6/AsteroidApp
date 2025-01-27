@@ -11,4 +11,5 @@
     <string name="aUtils" translatable="false">AnimationUtils </string>
     <string name="aDra" translatable="false">AnimationDrawable </string>
     <string name="tDra2" translatable="false">Arribarà? </string>
+    <string name="mN" translatable="false">Mover Nave </string>
 </resources>

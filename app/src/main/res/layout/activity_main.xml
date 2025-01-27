@@ -35,14 +35,14 @@
             android:text="@string/tDra" />
 
         <Button
-            android:id="@+id/configBoto"
+            android:id="@+id/aniU"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/menuBoto"
             android:text="@string/aUtils" />
 
         <Button
-            android:id="@+id/mesBoto"
+            android:id="@+id/animaDra3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/menuBoto"
