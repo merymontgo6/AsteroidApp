@@ -22,16 +22,16 @@ public class TranDrawable extends AppCompatActivity {
         setContentView(R.layout.activity_tran_drawable);
 
         ImageView imageView = findViewById(R.id.imageView);
-        transitionDrawable = (TransitionDrawable) getResources().getDrawable(R.drawable.transicio);
-        imageView.setBackground(transitionDrawable);
+        transitionDrawable = (TransitionDrawable) getResources().getDrawable(R.drawable.transicio); //carrega la transició
+        imageView.setBackground(transitionDrawable); //transició com a fons de la imatge
 
         Button canvi = findViewById(R.id.changeBackgroundButton);
         canvi.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (inici) { transitionDrawable.startTransition(2000);
-                } else { transitionDrawable.reverseTransition(2000);
+                if (inici) { transitionDrawable.startTransition(2000); //inicia la transició
+                } else { transitionDrawable.reverseTransition(2000); //inicia la transició inversa
                 }
-                inici = !inici;
+                inici = !inici; //canvia la imatge
             }
         });
     }
