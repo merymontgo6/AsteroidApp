@@ -23,8 +23,8 @@ public class AnimaDrawable extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_anima_drawable);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.aniDra2), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars()); //agafa les mides de la barra
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom); //aplica els canvis
             return insets;
         });
 
@@ -32,8 +32,8 @@ public class AnimaDrawable extends AppCompatActivity {
         Button moverButton = findViewById(R.id.moureBoto);
 
         moverButton.setOnClickListener(v -> {
-            naveImageView.setBackgroundResource(R.drawable.animacio);
-            animation = (AnimationDrawable) naveImageView.getBackground();
+            naveImageView.setBackgroundResource(R.drawable.animacio); //carrega l'animació
+            animation = (AnimationDrawable) naveImageView.getBackground(); //carrega l'animació
             animation.start();
         });
     }
