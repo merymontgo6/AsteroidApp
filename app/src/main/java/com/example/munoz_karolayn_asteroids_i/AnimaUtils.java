@@ -24,21 +24,21 @@ public class AnimaUtils extends AppCompatActivity {
         moureBoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (inici) { moureeNave();
-                } else { tornarNave();
+                if (inici) { moureeNave(); //si la imatge es la de inici es mou
+                } else { tornarNave(); //si no es la de inici torna a la posicio inicial
                 }
-                inici = !inici;
+                inici = !inici; //canvia la imatge
             }
         });
     }
 
     private void moureeNave() {
         Animation moureNave = AnimationUtils.loadAnimation(this, R.anim.moure);
-        naveImg.startAnimation(moureNave);
+        naveImg.startAnimation(moureNave); //inicia l'animacio
     }
 
     private void tornarNave() {
         Animation tornarNave = AnimationUtils.loadAnimation(this, R.anim.tornar);
-        naveImg.startAnimation(tornarNave);
+        naveImg.startAnimation(tornarNave); //inicia l'animacio
     }
 }
